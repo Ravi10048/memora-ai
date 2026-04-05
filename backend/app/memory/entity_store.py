@@ -28,7 +28,7 @@ Conversation:
 {conversation}
 
 Return ONLY valid JSON array. If no entities found, return [].
-Example: [{"entity_name": "User", "entity_type": "person", "attributes": {"company": "BlackNGreen", "role": "AI Engineer"}}]"""
+Example: [{{"entity_name": "User", "entity_type": "person", "attributes": {{"company": "BlackNGreen", "role": "AI Engineer"}}}}]"""
 
 
 CONFLICT_CHECK_PROMPT = """Two facts about the same entity may conflict. Determine if they do.
@@ -38,7 +38,7 @@ Existing fact: {existing}
 New fact: {new_fact}
 
 Is this a contradiction? Respond with ONLY valid JSON:
-{{"is_conflict": true/false, "is_explicit": true/false, "resolution": "keep_new" | "keep_old" | "keep_both", "reason": "brief explanation"}}
+{{{{"is_conflict": true/false, "is_explicit": true/false, "resolution": "keep_new" | "keep_old" | "keep_both", "reason": "brief explanation"}}}}
 
 - is_explicit: true if the new fact directly overrides (e.g., "I'm no longer vegetarian")
 - is_explicit: false if the conflict is indirect (e.g., "I had chicken" vs "I'm vegetarian")"""
