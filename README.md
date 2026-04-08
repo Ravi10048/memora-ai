@@ -4,6 +4,23 @@ AI agent with persistent three-tier memory that remembers past conversations, us
 
 Inspired by [Mem0](https://github.com/mem0ai/mem0), [Letta/MemGPT](https://github.com/letta-ai/letta), and [A-Mem (NeurIPS 2025)](https://arxiv.org/abs/2502.12110).
 
+## Demo
+
+### Chat with real-time thinking panel
+![Chat with Thinking](docs/chat-empty.jpeg)
+
+### Agent reasoning, memory search, and tool-calling visible in real-time
+![Agent Thinking](docs/chat-thinking.jpeg)
+
+### Memory Bank — Entity memory with extracted facts
+![Memory Bank Entities](docs/memory-bank1.jpeg)
+
+### Long-term memories stored from past conversations
+![Long-term Memories](docs/memory-bank2.jpeg)
+
+### Settings — LLM provider and memory configuration
+![Settings](docs/settings.jpeg)
+
 ## How It Works
 
 ```
